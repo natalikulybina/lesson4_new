@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поиск</title>
+    <style>
+        form {
+            background-color: #bdb7b2;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="https://fom.in.ua/echo" method="get">
+        <fieldset>
+            <legend>Поиск:</legend>
+            <label>
+                Тип кузова
+                <select name="carbody">
+                    <option>Седан</option>
+                    <option selected>Любой</option>
+                    <option>Внедорожник</option>
+                    <option>Купе</option>
+                    <option>Пикап</option>
+                    <option>Универсал</option>
+                </select>
+            </label>
+            <label>
+                Марка авто
+                <select name="carbrand" multiple>
+                    <option>BMW</option>
+                    <option selected>Любой</option>
+                    <option>Audi</option>
+                    <option>Chevrolet</option>
+                    <option>Honda</option>
+                    <option>Kia</option>
+                </select>
+            </label>
+            <label>
+                Комфорт
+                <select name="comfort" multiple>
+                    <option>Люк</option>
+                    <option>Кондиционер</option>
+                    <option>Кожаный салон</option>
+                    <option>Звукоизоляция</option>
+                    <option>Круиз-контроль</option>
+                </select>
+            </label>
+            <label>
+                Состояние
+                <select name="state" multiple>
+                    <option>Битая</option>
+                    <option>Растаможена</option>
+                    <option>Не растаможена</option>
+                    <option>В кредите</option>
+                    <option selected>Новая</option>
+                    <option>Б/у</option>
+                </select>
+            </label>
+            <p>
+                <label>Тип коробки передач:</label>
+                <label><input type="radio" value="Механическая" name="type">Механическая</label>
+                <label><input type="radio" value="Автоматическая" name="type">Автоматическая</label>
+                <label><input type="radio" value="Роботизированная" name="type">Роботизированная</label>
+                <label><input type="radio" value="Полуавтоматическая" name="type">Полуавтоматическая</label>
+            </p>
+            <p>
+                <label>Тип топлива:</label>
+                <label><input type="radio" value="Бензин" name="fuel">Бензин</label>
+                <label><input type="radio" value="Дизель" name="fuel">Дизель</label>
+            </p>
+            <p>
+                <label> Страна производитель:</label>
+                <label><input type="checkbox" value="Япония" name="country1" checked>Япония</label>
+                <label><input type="checkbox" value="Китай" name="country2">Китай</label>
+                <label><input type="checkbox" value="Германия" name="country3">Германия</label>
+                <label><input type="checkbox" value="США" name="country4">США</label>
+            </p>
+            <p>
+                <label for="price">Цена:</label>
+                8500<input type="range" step="500" min="8500" max="30000" value="10" name="price" />30000
+            </p>
+            <p>
+                <label for="year">Год выпуска:</label>
+                2000<input type="range" step="1" min="2000" max="2021" value="10" name="year" />2021
+            </p>
+            <p>
+                <label for="color">
+                    Выберите цвет:
+                    <input type="color" value="#009900" name="color">
+                </label>
+            </p>
+        </fieldset>
+        <input type="submit" name="submit" value="Поиск">
+        <input type="reset" name="reset" value="Очистить">
+    </form>
+</body>
+
+</html>

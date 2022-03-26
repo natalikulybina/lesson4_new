@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <style>
+        form {
+            background-color: #bdb7b2;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="https://fom.in.ua/echo" method="post">
+        <fieldset>
+            <legend>Регистрация:</legend>
+            <label>
+                Логин:
+                <input type="email" name="email" placeholder="example@exampl.com">
+            </label>
+            <p>
+            <label>
+                Пароль: <input type="password" name="password" placeholder="Введите пароль" />
+            </label>
+            </p>
+            <p>
+            <label>
+                Подтверждение пароля:<input type="password" name="password2" placeholder="Повторите пароль" />
+            </label>
+            </p>
+            <input type="submit" name="submit" value="Зарегистрироваться" />
+            <input type="reset" name="reset" value="Очистить">
+        </fieldset>
+    </form>
+</body>
+
+</html>
